@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'signup.css' %}">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+
+  <div class="container">
+    
+    <div class="title">Water Billing System</div>
+    <div class="content">
+      <form action="register" method="post">
+        {% csrf_token %}
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" name="first_name" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email.</span>
+            <input type="text" name="email" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Middle Name</span>
+            <input type="text" name="middle_name" placeholder="">
+          </div>
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" name="last_name" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">District</span>
+            <input type="text" name="district" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" name="phone" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Citizenship No.</span>
+            <input type="text" name="citizenship" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Gender</span>
+            <input type="text" name="gender" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Municipality</span>
+            <input type="text" name="municipality" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details"> Password</span>
+            <input type="text" name="password1" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Ward No.</span>
+            <input type="text" name="wardno" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" name="password2" placeholder="" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Town/Village</span>
+            <input type="text" name="town" placeholder="" required>
+          </div>
+         
+        
+          
+        </div>
+    
+        <div class="button">
+          <input type="submit" value="Sign Up">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
